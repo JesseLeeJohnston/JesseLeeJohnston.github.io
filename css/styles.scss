@@ -1,0 +1,489 @@
+/* GENERAL DOCUMENT STYLING */
+$light-green: #4faf47;
+$dark-green: #317f3f;
+$black: #0a0c0a;
+$dark-grey: #4e4f4d;
+
+
+
+html,body {
+  height:100%;
+}
+
+body {
+  font-family: 'Oswald regular',  verdana,  Arial,  sans-serif;
+  color: $dark-grey;
+  background: #fff;
+}
+
+a:link, a:visited, a:active, a {
+    color: $dark-grey;
+    font-family: 'Oswald', sans-serif;    outline: none;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-family: 'Oswald', sans-serif;    outline: none;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'Oswald', sans-serif;    outline: none;
+    font-weight: 300;
+    padding-bottom: 10px;
+    color: $dark-grey;
+    padding-top: 20px;
+}
+
+p {
+  margin: 10px auto 30px auto;
+  line-height: 35px;
+  font-family: 'Oswald', sans-serif;
+  outline: none;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.block header {
+    color: $light-green;
+    margin: 0 0 30px;
+    font-size: 22px;
+    padding: 0 0 5px;
+    border-bottom: 1px solid #d4d4d4;
+    font-family: 'Oswald', sans-serif;    outline: none;
+    font-weight: 300;
+}
+
+.container {
+  height:100%;
+  z-index: 999999;
+  position: absolute;
+  top: 0;
+}
+.main-row {
+  margin-left:0;
+  margin-right:0;
+}
+.fill {
+  width:100%;
+  height:100%;
+  min-height:100%;
+  padding:0px;
+}
+
+video {
+  z-index: -10000;
+}
+
+
+/************************************************************************* HOMEPAGE SPECIFIC STYLING */
+
+/***************************************************************** MENU */
+#nav-logo {
+    display: block;
+    max-width: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 10px; 
+    padding-bottom: 20px;
+}
+
+.sidebar {
+  background: #fff;
+  height:100%;
+  min-height:100%;
+}
+
+.sidebar h1 span {
+color: #565656;
+font-size: 12px;
+margin-top: -20px;
+padding-bottom: 25px;
+display: block;
+text-align: center;
+letter-spacing: 2px;
+}
+
+.sidebar li {
+padding: 5px 0 10px;
+position: relative;
+display: block;
+list-style: none;
+}
+
+.sidebar li a {
+color: #333;
+font-family: 'Oswald', sans-serif;
+font-size: 18px;
+outline: none;
+font-weight: 300;
+text-decoration: none;
+border-bottom: none;
+-webkit-transition: 1s ease;
+-moz-transition: 1s ese;
+-o-transition: 1s ease;
+-ms-transition: 1s ease;
+transition: 1s ease;
+
+
+}
+
+.sidebar li a:hover {
+  color: $light-green;
+}
+
+#active {
+  border-bottom: 1px dotted $light-green;
+}
+
+
+
+
+#center {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+/******************************************************************** FOOTER */
+
+.footer {
+  background-color: #000;
+  margin: 0px;
+  width: 50%;
+  float: left;
+  height: 55px;
+  p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+  }
+  i {
+    color: #fff;
+  }
+}
+
+.fa-lg {
+font-size: 1.3333333333333333em;
+line-height: .75em;
+vertical-align: -15%;
+padding: 10px;
+}
+
+
+
+/***************************************************************** ABOUT PAGE */
+
+header {
+color: $light-green;
+margin: 0 0 30px;
+font-size: 22px;
+padding: 0 0 5px;
+border-bottom: 1px solid #d4d4d4;
+font-family: 'Oswald', sans-serif;
+outline: none;
+font-weight: 300;
+}
+
+.main-content-area {
+position: relative;
+float: left;
+width: 100%;
+height: 100%;
+background: #fff;
+padding: 30px;
+}
+
+
+
+
+.col-sm-9 {
+border-left: 1px solid #ddd;
+}
+
+/* MEDIA QUERIES MOBILE */
+/* HOME */
+
+
+
+.jt-black {
+  background-color: #000;
+  color: #fff;
+  height: 150px;
+  margin-bottom: 0px;
+  text-align: center;
+  a {
+    color: #fff;
+  }
+  p {
+    font-size: 16px;
+  }  
+}
+
+.jt-grey {
+  background-color: #565656;
+  color: #fff;
+  height: 600px;
+  margin-bottom: 0px;  
+}
+
+.jt-white {
+  background-color: #fff;
+  color: #000;
+  height: 300px;
+
+}
+
+.home-callout {
+  width: 50%;
+  background-color: $light-green;
+  padding: 60px 20px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  &:hover {
+    background-color: $dark-green;
+  }
+}
+
+
+/* MOBILE BACKGROUND */
+.mobile-background {
+  background: #000;
+  background-image: url('../img/videoscreen.jpg');
+  /*background-position: 50% 50%;*/ /* image centered on screen */
+  height:100%;
+  min-height:100%;
+}
+
+.top {
+  z-index: 9999;
+}
+
+.col-xs-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+}
+
+.navbar-collapse {
+  border: none;
+  z-index: 9999;
+}
+
+#nav-logo-mobile {
+    display: block;
+    margin: 7px;
+    width: 40%;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle {
+  border-radius: 0px;
+  margin-top: 15px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: $dark-grey;
+}
+
+.navbar-toggle .icon-bar {
+display: block;
+width: 30px;
+height: 2px;
+border-radius: 1px;
+}
+
+@media only screen and (max-width: 960px) {
+
+/*.center-fix {
+    margin-left: 50px;
+}*/
+
+}
+
+
+@media only screen and (max-width: 768px) {
+#logo {
+    display: block;
+    max-width: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 200px; 
+}
+
+}
+
+/***************************************************************** EXPERIENCE */
+
+#client-logo {
+  padding: 20px;
+  width: 80%;
+}
+
+#resume-download {
+  margin: 30px 0 30px 0;
+}
+
+#resume-download a:hover {
+  color: light-green;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ese;
+  -o-transition: 1s ease;
+  -ms-transition: 1s ease;
+  transition: 1s ease;
+}
+
+#work-exp {
+  list-style: none;
+  margin-bottom: -25px;
+  margin-left: -25px;
+}
+
+
+
+/***************************************************************** WORK */
+
+#last-update {
+  text-align: center;
+  border-top: dotted 1px #010101;
+}
+
+#last-update p {
+  margin-bottom: 10px;
+}
+
+.portfolio-thumb {
+  padding-bottom: 70px;
+  span {
+  text-align: right;
+  }
+  img {
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.20);
+    -moz-box-shadow:    1px 1px 1px 0px rgba(50, 50, 50, 0.20);
+    box-shadow:         1px 1px 1px 0px rgba(50, 50, 50, 0.20);
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.portfolio-img {
+  margin-bottom: 80px;
+  margin-top: 80px;
+  img {
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.20);
+  -moz-box-shadow:    1px 1px 1px 0px rgba(50, 50, 50, 0.20);
+  box-shadow:         1px 1px 1px 0px rgba(50, 50, 50, 0.20);  
+  }
+}
+
+.btn-primary {
+  background-color: $light-green;
+  border: 0px;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.portfolio-nav {
+  width: 50%;
+  background-color: $light-green;
+  padding: 20px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  &:hover {
+    background-color: $dark-green;
+  }
+}
+
+.live-demo {
+  background-color: $light-green;
+  color: #fff;
+  padding: 10px;
+  &:hover {
+    background-color: $dark-green;
+  }
+}
+
+a.live-demo {
+  color: #fff;
+}
+
+/****************************************************************** WORK SAMPLES */
+
+#role {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+#description {
+  padding: 10px 0 20px 0;
+}
+
+
+
+/***************************************************************** CONTACT */
+
+#contact-list {
+  list-style: none;
+}
+
+#contact-list li {
+  margin-top: 15px;
+  line-height: 26px;
+font-family: 'Oswald', sans-serif;
+outline: none;
+font-weight: 300;
+font-size: 16px;
+}
+
+#contact-list i {
+  padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
