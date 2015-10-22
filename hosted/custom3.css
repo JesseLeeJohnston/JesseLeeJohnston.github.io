@@ -41,7 +41,7 @@
 }
 /* SLIDER HANDLE STYLES */
 .ui-slider-handle {
-    background: url("images/handlearrow.png") 50% 50% !important;
+    background: url("handlearrow.png") 50% 50% !important;
     margin-left: -.100em;
     border-bottom: 0;
     border-right: 0;
@@ -90,7 +90,7 @@
 }
 /* SLIDER HANDLE STYLES */
 .ui-slider-handle {
-    background: url("images/handlearrow.png") 50% 50% !important;
+    background: url("handlearrow.png") 50% 50% !important;
     margin-left: -.100em;
     border-bottom: 0;
     border-right: 0;
@@ -104,7 +104,7 @@
     outline: 0;
 }*/
 .ui-slider-handle:active {
-    background: url("images/handlearrowactive.png") 50% 50% !important;
+    background: url("handlearrowactive.png") 50% 50% !important;
 }
 .ui-slider-horizontal .ui-slider-handle {
     margin-left: -.9em;
@@ -113,7 +113,7 @@
 	border: 0;
 }
 .ui-slider-handle:active {
-    background: url("images/handlearrowactive.png") 50% 50% !important;
+    background: url("handlearrowactive.png") 50% 50% !important;
 }
 .ui-widget-content {
     height: 10px;
@@ -131,7 +131,7 @@
     outline: 0;
 }*/
 .ui-slider-handle:active {
-    background: url("images/handlearrowactive.png") 50% 50% !important;
+    background: url("handlearrowactive.png") 50% 50% !important;
 }
 .ui-slider-horizontal .ui-slider-handle {
     margin-left: -.9em;
@@ -140,7 +140,7 @@
 	border: 0;
 }
 .ui-slider-handle:active {
-    background: url("images/handlearrowactive.png") 50% 50% !important;
+    background: url("handlearrowactive.png") 50% 50% !important;
 }
 .ui-widget-content {
     height: 10px;
