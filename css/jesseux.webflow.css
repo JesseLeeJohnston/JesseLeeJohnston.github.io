@@ -43,9 +43,16 @@ p {
 }
 
 .navlink {
+  -webkit-transition: margin 200ms ease;
+  transition: margin 200ms ease;
   font-family: Lato, sans-serif;
   color: #fff;
   font-weight: 300;
+}
+
+.navlink:hover {
+  margin-top: -3px;
+  padding-bottom: 20px;
 }
 
 .navlink.w--current {
@@ -104,6 +111,9 @@ p {
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
+  opacity: 1;
+  -webkit-transition: opacity 600ms ease;
+  transition: opacity 600ms ease;
   text-decoration: none;
 }
 
@@ -113,7 +123,7 @@ p {
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .viewwork {
@@ -137,7 +147,13 @@ p {
   background-image: linear-gradient(286deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5)), url('../images/reporting.png');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
+  -webkit-transition: opacity 600ms ease;
+  transition: opacity 600ms ease;
   text-decoration: none;
+}
+
+.viewwork:hover {
+  opacity: 0.5;
 }
 
 .navbarcontainer {
@@ -217,7 +233,18 @@ p {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
   text-align: left;
+}
+
+.clientlogo:hover {
+  padding-top: 0px;
+  -webkit-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
 }
 
 .logocontainer {
@@ -350,6 +377,10 @@ p {
   text-decoration: none;
 }
 
+.a:hover {
+  text-decoration: underline;
+}
+
 .link {
   text-decoration: none;
 }
@@ -375,9 +406,15 @@ p {
   display: block;
   width: 100%;
   background-color: #00b7c9;
+  -webkit-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
   font-family: Lato, sans-serif;
   font-weight: 300;
   text-align: center;
+}
+
+.primarybutton:hover {
+  background-color: #02d0e4;
 }
 
 .divider {
@@ -529,7 +566,21 @@ p {
 }
 
 .reportingthumb.shadow {
+  background-image: url('../images/reporting.png');
+  background-position: 50% 36%;
+  background-size: cover;
   box-shadow: 0 0 1px 0 #333;
+  opacity: 1;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.reportingthumb.shadow:hover {
+  background-position: 0px -174px;
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .thumbnailtextwrapper {
@@ -548,6 +599,13 @@ p {
   background-position: 50% 0px;
   background-size: cover;
   box-shadow: 0 0 1px 0 #333;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.referralthumb:hover {
+  background-position: 0px -86px;
+  opacity: 1;
 }
 
 .surveythumbnail {
@@ -556,6 +614,12 @@ p {
   background-position: 50% 0%;
   background-size: cover;
   box-shadow: 0 0 1px 0 #333;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.surveythumbnail:hover {
+  background-position: 0px -128px;
 }
 
 .fixingappthumb {
@@ -564,16 +628,32 @@ p {
   background-position: 50% 0px;
   background-size: cover;
   box-shadow: 0 0 1px 0 #333;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.fixingappthumb:hover {
+  background-position: 50% -114px;
+  background-size: cover;
 }
 
 .codecampthumb {
   height: 200px;
   background-image: url('../images/codecampyvr-1.jpg'), -webkit-linear-gradient(270deg, #fff, #fff);
   background-image: url('../images/codecampyvr-1.jpg'), linear-gradient(180deg, #fff, #fff);
-  background-position: 50% 50%, 0px 0px;
-  background-size: auto 100%, auto;
+  background-position: 50% -47px, 0px 0px;
+  background-size: cover, auto;
   background-repeat: no-repeat, repeat;
   box-shadow: 0 0 1px 0 #333;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.codecampthumb:hover {
+  background-image: url('../images/codecampyvr-1.jpg'), -webkit-linear-gradient(270deg, null, null);
+  background-image: url('../images/codecampyvr-1.jpg'), linear-gradient(180deg, null, null);
+  background-position: 0px -115px, 0px 0px;
+  background-size: cover, auto;
 }
 
 .tiktokthumb {
@@ -582,15 +662,22 @@ p {
   background-position: 50% 38%;
   background-size: cover;
   box-shadow: 0 0 1px 0 #333;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.tiktokthumb:hover {
+  background-position: 0px -156px;
 }
 
 .thumblink {
   display: block;
   width: 100%;
-  margin-right: 12px;
-  margin-left: -10px;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: #00b7c9;
+  background-image: -webkit-linear-gradient(290deg, #00b7c9, #7cf3ff);
+  background-image: linear-gradient(160deg, #00b7c9, #7cf3ff);
 }
 
 .secondarythumb {
@@ -601,12 +688,47 @@ p {
 .fullrow {
   padding-right: 0px;
   padding-left: 0px;
+  background-color: #00b7c9;
+  background-image: -webkit-linear-gradient(290deg, #00b7c9, #7cf3ff);
+  background-image: linear-gradient(160deg, #00b7c9, #7cf3ff);
 }
 
 .gradient {
   background-color: #808b92;
   background-image: -webkit-linear-gradient(120deg, #000, #fff);
   background-image: linear-gradient(330deg, #000, #fff);
+}
+
+html.w-mod-js *[data-ix="appear-on-load"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="appear-1"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="appear-2"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="appear-3"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="appear-4"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="appear-5"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="delay-appear-on-load"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="delay-appear-on-load-2"] {
+  opacity: 0;
 }
 
 @media (max-width: 991px) {
@@ -643,6 +765,9 @@ p {
   }
   .thumbnailtextwrapper {
     padding-top: 20px;
+  }
+  .thumblink {
+    margin-left: 0px;
   }
 }
 
@@ -686,6 +811,9 @@ p {
   .containerpadding {
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .thumblink {
+    margin-left: 0px;
   }
 }
 
