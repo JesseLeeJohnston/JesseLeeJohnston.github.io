@@ -193,11 +193,23 @@ p {
 }
 
 .footer-a {
+  display: inline-block;
+  margin-top: 0px;
   padding-right: 10px;
   padding-left: 10px;
   font-family: Lato, sans-serif;
   color: #636363;
   text-decoration: none;
+}
+
+.footer-a:hover {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.footer-a.w--current:hover {
+  margin-top: 0px;
 }
 
 .footercontainer {
@@ -697,6 +709,28 @@ p {
   background-color: #808b92;
   background-image: -webkit-linear-gradient(120deg, #000, #fff);
   background-image: linear-gradient(330deg, #000, #fff);
+}
+
+.pagecallout {
+  margin-bottom: -25px;
+  background-color: #0cf;
+}
+
+.pagecalloutcontainer {
+  display: block;
+  height: auto;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  color: #fff;
+  text-align: center;
+}
+
+.pagecallouttext {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 200;
 }
 
 html.w-mod-js *[data-ix="appear-on-load"] {
