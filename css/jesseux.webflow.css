@@ -28,11 +28,8 @@ p {
 .primary-feature {
   display: block;
   height: 400px;
-  background-image: url('../images/background.svg'), -webkit-linear-gradient(164deg, #303030, dimgrey);
-  background-image: url('../images/background.svg'), linear-gradient(286deg, #303030, dimgrey);
-  background-position: 50% -12%, 0px 0px;
-  background-size: auto 350px, auto;
-  background-repeat: no-repeat, repeat;
+  background-image: -webkit-linear-gradient(164deg, #303030, dimgrey);
+  background-image: linear-gradient(286deg, #303030, dimgrey);
 }
 
 .navbar {
@@ -106,11 +103,10 @@ p {
   -ms-flex-align: center;
   align-items: center;
   background-color: #202020;
-  background-image: -webkit-linear-gradient(164deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5)), url('../images/profile-2.png');
-  background-image: linear-gradient(286deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5)), url('../images/profile-2.png');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
+  background-image: -webkit-linear-gradient(164deg, hsla(0, 0%, 41%, .5), rgba(48, 48, 48, .5)), url('../images/home-profile.jpg'), -webkit-linear-gradient(164deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5));
+  background-image: linear-gradient(286deg, hsla(0, 0%, 41%, .5), rgba(48, 48, 48, .5)), url('../images/home-profile.jpg'), linear-gradient(286deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5));
+  background-position: 0px 0px, 50% 0px, 0px 0px;
+  background-size: auto, cover, auto;
   opacity: 1;
   -webkit-transition: opacity 600ms ease;
   transition: opacity 600ms ease;
@@ -118,12 +114,11 @@ p {
 }
 
 .about:hover {
-  background-image: -webkit-linear-gradient(164deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5)), url('../images/profile-2.png');
-  background-image: linear-gradient(286deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5)), url('../images/profile-2.png');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
-  opacity: 0.5;
+  background-image: -webkit-linear-gradient(164deg, hsla(0, 0%, 41%, .5), rgba(48, 48, 48, .5)), url('../images/home-profile.jpg'), -webkit-linear-gradient(164deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5));
+  background-image: linear-gradient(286deg, hsla(0, 0%, 41%, .5), rgba(48, 48, 48, .5)), url('../images/home-profile.jpg'), linear-gradient(286deg, rgba(48, 48, 48, .5), hsla(0, 0%, 41%, .5));
+  background-position: 0px 0px, 50% 0px, 0px 0px;
+  background-size: auto, cover, auto;
+  opacity: 0.8;
 }
 
 .viewwork {
@@ -153,7 +148,7 @@ p {
 }
 
 .viewwork:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .navbarcontainer {
@@ -700,9 +695,9 @@ p {
 .fullrow {
   padding-right: 0px;
   padding-left: 0px;
-  background-color: #00b7c9;
-  background-image: -webkit-linear-gradient(290deg, #00b7c9, #7cf3ff);
-  background-image: linear-gradient(160deg, #00b7c9, #7cf3ff);
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .5));
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .5));
 }
 
 .gradient {
@@ -712,7 +707,7 @@ p {
 }
 
 .pagecallout {
-  margin-bottom: -25px;
+  margin-bottom: -16px;
   background-color: #0cf;
 }
 
@@ -720,8 +715,9 @@ p {
   display: block;
   height: auto;
   margin-top: 0px;
+  margin-bottom: -25px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   padding-left: 0px;
   color: #fff;
   text-align: center;
@@ -731,6 +727,14 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 200;
+}
+
+.calloutlink {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-decoration: none;
 }
 
 html.w-mod-js *[data-ix="appear-on-load"] {
@@ -787,6 +791,9 @@ html.w-mod-js *[data-ix="delay-appear-on-load-2"] {
   .menuicon {
     color: #fff;
   }
+  .pagecalloutcontainer {
+    margin-bottom: -3px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -802,6 +809,16 @@ html.w-mod-js *[data-ix="delay-appear-on-load-2"] {
   }
   .thumblink {
     margin-left: 0px;
+  }
+  .pagecallout {
+    margin-bottom: -46px;
+  }
+  .pagecalloutcontainer {
+    margin-bottom: 0px;
+    padding-bottom: 24px;
+  }
+  .calloutlink {
+    margin-bottom: -72px;
   }
 }
 
