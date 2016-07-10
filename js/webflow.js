@@ -4583,5 +4583,6 @@ Webflow.require('ix').init([
   {"slug":"appear-4","name":"Appear 4","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"transition":"opacity 900ms ease 0ms"}],"stepsB":[]}]}},
   {"slug":"appear-5","name":"Appear 5","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"transition":"opacity 1000ms ease 0ms"}],"stepsB":[]}]}},
   {"slug":"delay-appear-on-load","name":"Delay Appear On Load","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"opacity 2500ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"delay-appear-on-load-2","name":"Delay Appear On Load 2","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"opacity 3000ms ease 0ms"}],"stepsB":[]}]}}
+  {"slug":"delay-appear-on-load-2","name":"Delay Appear On Load 2","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"opacity 3000ms ease 0ms"}],"stepsB":[]}]}},
+  {"slug":"new-interaction","name":"New Interaction","value":{"style":{},"triggers":[]}}
 ]);
