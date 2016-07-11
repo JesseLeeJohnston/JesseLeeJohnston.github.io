@@ -72,6 +72,7 @@ p {
 .featuretext {
   font-family: Lato, sans-serif;
   color: #fff;
+  font-size: 18px;
   font-weight: 200;
   text-align: center;
 }
@@ -708,7 +709,7 @@ p {
 
 .pagecallout {
   margin-bottom: -16px;
-  background-color: #0cf;
+  background-color: #00b7c9;
 }
 
 .pagecalloutcontainer {
@@ -726,7 +727,7 @@ p {
 .pagecallouttext {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .calloutlink {
@@ -823,6 +824,11 @@ html.w-mod-js *[data-ix="delay-appear-on-load-2"] {
 }
 
 @media (max-width: 479px) {
+  .featuretext {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 200;
+  }
   .footer-p {
     padding-right: 5px;
     padding-left: 5px;
