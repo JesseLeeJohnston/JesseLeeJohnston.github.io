@@ -3111,7 +3111,7 @@
 	    data.open = false;
 	    data.button.removeClass(buttonOpen);
 	    var config = data.config;
-	    if (config.animation === 'none' || !tram.support.transform) immediate = true;
+	    if (config.animation === 'none' || !tram.support.transform || config.duration <= 0) immediate = true;
 	    ix.outro(0, data.el[0]);
 
 	    // Stop listening for tap outside events
@@ -4576,13 +4576,17 @@
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([
-  {"slug":"appear-on-load","name":"Appear on Load","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"opacity 500ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"appear-1","name":"Appear 1","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"transition":"opacity 500ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"appear-2","name":"Appear 2","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"wait":600,"transition":"transform 150ms ease 0ms, opacity 600ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"appear-3","name":"Appear 3","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"transition":"opacity 800ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"appear-4","name":"Appear 4","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"transition":"opacity 900ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"appear-5","name":"Appear 5","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"transition":"opacity 1000ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"delay-appear-on-load","name":"Delay Appear On Load","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"opacity 2500ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"delay-appear-on-load-2","name":"Delay Appear On Load 2","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"opacity 3000ms ease 0ms"}],"stepsB":[]}]}},
-  {"slug":"new-interaction","name":"New Interaction","value":{"style":{},"triggers":[]}}
+  {"slug":"load-1","name":"Load-1","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"transform 500ms ease 0ms, opacity 950ms ease 0ms","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}},
+  {"slug":"messagegrow","name":"MessageGrow","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-2","name":"MessageGrow 2","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":1700},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-3","name":"MessageGrow 3","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":4100},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.05,"scaleY":1.05,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-4","name":"MessageGrow 4","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":6500},{"opacity":1,"transition":"transform 500ms ease 0ms, opacity 500ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-5","name":"MessageGrow 5","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":9300},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-6","name":"MessageGrow 6","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":13500},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-7","name":"MessageGrow 7","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":17100},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-8","name":"MessageGrow 8","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":21000},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-9","name":"MessageGrow 9","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":25000},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"load-2","name":"Load- 2","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","offsetBot":"20%","stepsA":[{"opacity":1,"wait":1400,"transition":"opacity 1400ms ease 0ms"}],"stepsB":[]}]}},
+  {"slug":"new-interaction","name":"New Interaction","value":{"style":{},"triggers":[{"type":"load","stepsA":[],"stepsB":[]}]}},
+  {"slug":"display-onload","name":"Display onload","value":{"style":{"display":"none"},"triggers":[{"type":"load","stepsA":[{"display":"block","wait":300}],"stepsB":[]}]}}
 ]);
