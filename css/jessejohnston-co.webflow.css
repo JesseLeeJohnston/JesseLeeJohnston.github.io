@@ -17,6 +17,11 @@ p {
   font-weight: 300;
 }
 
+a {
+  color: #00bc47;
+  text-decoration: none;
+}
+
 .navbar {
   position: fixed;
   left: 0px;
@@ -394,15 +399,12 @@ p {
   margin-bottom: 60px;
 }
 
-html.w-mod-js *[data-ix="load-1"] {
-  opacity: 0;
+.messagelink {
+  color: #fff;
 }
 
-html.w-mod-js *[data-ix="messagegrow"] {
+html.w-mod-js *[data-ix="load-1"] {
   opacity: 0;
-  -webkit-transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  transform: scale(0.8, 0.8);
 }
 
 html.w-mod-js *[data-ix="messagegrow-2"] {
@@ -413,48 +415,6 @@ html.w-mod-js *[data-ix="messagegrow-2"] {
 }
 
 html.w-mod-js *[data-ix="messagegrow-3"] {
-  opacity: 0;
-  -webkit-transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  transform: scale(0.8, 0.8);
-}
-
-html.w-mod-js *[data-ix="messagegrow-4"] {
-  opacity: 0;
-  -webkit-transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  transform: scale(0.8, 0.8);
-}
-
-html.w-mod-js *[data-ix="messagegrow-5"] {
-  opacity: 0;
-  -webkit-transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  transform: scale(0.8, 0.8);
-}
-
-html.w-mod-js *[data-ix="messagegrow-6"] {
-  opacity: 0;
-  -webkit-transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  transform: scale(0.8, 0.8);
-}
-
-html.w-mod-js *[data-ix="messagegrow-7"] {
-  opacity: 0;
-  -webkit-transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  transform: scale(0.8, 0.8);
-}
-
-html.w-mod-js *[data-ix="messagegrow-8"] {
-  opacity: 0;
-  -webkit-transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  transform: scale(0.8, 0.8);
-}
-
-html.w-mod-js *[data-ix="messagegrow-9"] {
   opacity: 0;
   -webkit-transform: scale(0.8, 0.8);
   -ms-transform: scale(0.8, 0.8);
