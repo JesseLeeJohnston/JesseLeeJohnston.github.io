@@ -459,8 +459,74 @@
 /***/ function(module, exports) {
 
 	// shim for using process in browser
-
 	var process = module.exports = {};
+
+	// cached from whatever global is present so that test runners that stub it
+	// don't break things.  But we need to wrap it in a try catch in case it is
+	// wrapped in strict mode code which doesn't define any globals.  It's inside a
+	// function because try/catches deoptimize in certain engines.
+
+	var cachedSetTimeout;
+	var cachedClearTimeout;
+
+	(function () {
+	    try {
+	        cachedSetTimeout = setTimeout;
+	    } catch (e) {
+	        cachedSetTimeout = function () {
+	            throw new Error('setTimeout is not defined');
+	        }
+	    }
+	    try {
+	        cachedClearTimeout = clearTimeout;
+	    } catch (e) {
+	        cachedClearTimeout = function () {
+	            throw new Error('clearTimeout is not defined');
+	        }
+	    }
+	} ())
+	function runTimeout(fun) {
+	    if (cachedSetTimeout === setTimeout) {
+	        //normal enviroments in sane situations
+	        return setTimeout(fun, 0);
+	    }
+	    try {
+	        // when when somebody has screwed with setTimeout but no I.E. maddness
+	        return cachedSetTimeout(fun, 0);
+	    } catch(e){
+	        try {
+	            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+	            return cachedSetTimeout.call(null, fun, 0);
+	        } catch(e){
+	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+	            return cachedSetTimeout.call(this, fun, 0);
+	        }
+	    }
+
+
+	}
+	function runClearTimeout(marker) {
+	    if (cachedClearTimeout === clearTimeout) {
+	        //normal enviroments in sane situations
+	        return clearTimeout(marker);
+	    }
+	    try {
+	        // when when somebody has screwed with setTimeout but no I.E. maddness
+	        return cachedClearTimeout(marker);
+	    } catch (e){
+	        try {
+	            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+	            return cachedClearTimeout.call(null, marker);
+	        } catch (e){
+	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+	            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+	            return cachedClearTimeout.call(this, marker);
+	        }
+	    }
+
+
+
+	}
 	var queue = [];
 	var draining = false;
 	var currentQueue;
@@ -485,7 +551,7 @@
 	    if (draining) {
 	        return;
 	    }
-	    var timeout = setTimeout(cleanUpNextTick);
+	    var timeout = runTimeout(cleanUpNextTick);
 	    draining = true;
 
 	    var len = queue.length;
@@ -502,7 +568,7 @@
 	    }
 	    currentQueue = null;
 	    draining = false;
-	    clearTimeout(timeout);
+	    runClearTimeout(timeout);
 	}
 
 	process.nextTick = function (fun) {
@@ -514,7 +580,7 @@
 	    }
 	    queue.push(new Item(fun, args));
 	    if (queue.length === 1 && !draining) {
-	        setTimeout(drainQueue, 0);
+	        runTimeout(drainQueue);
 	    }
 	};
 
@@ -4577,16 +4643,10 @@
  */
 Webflow.require('ix').init([
   {"slug":"load-1","name":"Load-1","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"transform 500ms ease 0ms, opacity 950ms ease 0ms","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}},
-  {"slug":"messagegrow","name":"MessageGrow","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"messagegrow-2","name":"MessageGrow 2","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":1700},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"messagegrow-3","name":"MessageGrow 3","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":4100},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.05,"scaleY":1.05,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"messagegrow-4","name":"MessageGrow 4","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":6500},{"opacity":1,"transition":"transform 500ms ease 0ms, opacity 500ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"messagegrow-5","name":"MessageGrow 5","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":9300},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"messagegrow-6","name":"MessageGrow 6","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":13500},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"messagegrow-7","name":"MessageGrow 7","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":17100},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"messagegrow-8","name":"MessageGrow 8","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":21000},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"messagegrow-9","name":"MessageGrow 9","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":25000},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":300,"transition":"transform 400ms ease 0ms, opacity 300ms ease 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-2","name":"MessageGrow 2","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"transform 500ms ease-in-out 0ms, opacity 500ms ease-in-out 0ms","scaleX":1.1,"scaleY":1.1,"scaleZ":1},{"opacity":1,"wait":500,"transition":"transform 500ms ease-in-out 0ms, opacity 500ms ease-in-out 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
+  {"slug":"messagegrow-3","name":"MessageGrow 3","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"wait":500},{"opacity":1,"transition":"transform 300ms ease 0ms, opacity 300ms ease 0ms","scaleX":1.05,"scaleY":1.05,"scaleZ":1},{"opacity":1,"wait":500,"transition":"transform 500ms ease-in-out 0ms, opacity 500ms ease-in-out 0ms","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
   {"slug":"load-2","name":"Load- 2","value":{"style":{"opacity":0},"triggers":[{"type":"scroll","offsetBot":"20%","stepsA":[{"opacity":1,"wait":1400,"transition":"opacity 1400ms ease 0ms"}],"stepsB":[]}]}},
   {"slug":"new-interaction","name":"New Interaction","value":{"style":{},"triggers":[{"type":"load","stepsA":[],"stepsB":[]}]}},
-  {"slug":"display-onload","name":"Display onload","value":{"style":{"display":"none"},"triggers":[{"type":"load","stepsA":[{"display":"block","wait":300}],"stepsB":[]}]}}
+  {"slug":"display-onload","name":"Display onload","value":{"style":{"display":"none"},"triggers":[{"type":"load","stepsA":[{"display":"block","wait":300}],"stepsB":[]}]}},
+  {"slug":"messagehover","name":"messageHover","value":{"style":{},"triggers":[{"type":"hover","stepsA":[{"transition":"transform 300ms ease-in-out 0ms","scaleX":1.05,"scaleY":1.05,"scaleZ":1}],"stepsB":[{"wait":300,"transition":"transform 500ms ease-in-out 0ms","scaleX":1,"scaleY":1,"scaleZ":1}]}]}}
 ]);
