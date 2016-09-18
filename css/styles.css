@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -360,11 +361,13 @@ th {
   box-sizing: border-box; }
 
 [class*='col-'] {
-  padding-right: 20px; }
+  padding: 0 10px; }
 
 .grid {
   background: none;
-  margin: 0 0 0 0; }
+  margin: 0 0 0 0;
+  margin-left: -10px;
+  margin-right: -10px; }
   .grid:after {
     /* Or @extend clearfix */
     content: "";
@@ -384,7 +387,7 @@ th {
   width: 33.33%; }
 
 .col-1-2 {
-  width: 48%; }
+  width: 50%; }
 
 .col-1-4 {
   width: 25%; }
@@ -441,4 +444,89 @@ th {
   float: left; }
 
 body {
-  color: red; }
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  color: #30342c;
+  font-size: 18px;
+  line-height: 28px; }
+
+h1 {
+  font-size: 28px;
+  font-weight: 800; }
+
+a, a:visited {
+  color: #30342c;
+  text-decoration: none; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 75px;
+  padding: 0 10px; }
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 45px;
+  box-shadow: 0 1px 3px 0 #a3a3a3; }
+
+.nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 10px; }
+
+.nav-brand {
+  float: left;
+  padding-top: 5px; }
+
+.nav-links {
+  float: right; }
+  .nav-links ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    line-height: 45px; }
+  .nav-links li {
+    display: inline;
+    margin-right: 15px; }
+  .nav-links li:last-of-type {
+    margin-right: 0px; }
+
+.show {
+  display: block !important; }
+
+.hidden {
+  display: none !important; }
+
+@media (max-width: 960px) {
+  .mobile-hidden {
+    display: none !important; }
+
+  .mobile-show {
+    display: block !important; } }
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.work-teaser-box {
+  border: 1px solid #30342c;
+  border-bottom: 4px solid #30342c;
+  border-radius: 4px;
+  transition: background-color 1s;
+  margin-bottom: 20px; }
+  .work-teaser-box h2 {
+    padding-left: 10px;
+    transition: color 1s; }
+  .work-teaser-box p {
+    padding-left: 10px;
+    margin-top: -20px;
+    transition: color 1s; }
+  .work-teaser-box img {
+    float: right; }
+  .work-teaser-box:hover {
+    background-color: #00bc47;
+    color: #fff; }

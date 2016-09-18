@@ -7,5 +7,116 @@
 @import 'partials/typography';
 
 body {
-  color: red;
+  background-color: #ffffff;
+  font-family: $font;
+  color: $text;
+  font-size: 18px;
+  line-height: 28px;
+}
+h1 {
+ font-size: 28px;
+ font-weight: 800;
+}
+h2 {
+
+}
+h3{
+
+}
+p {
+
+}
+a {
+
+}
+  a, a:visited {
+    color: $text;
+    text-decoration: none;
+  }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 75px;
+  padding: 0 10px; 
+}
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(255,255,255, 0.9);
+  height: 45px;
+  box-shadow: 0 1px 3px 0 #a3a3a3;
+  
+}
+.nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 10px;
+}
+.nav-brand {
+  float: left;
+  padding-top: 5px;
+}
+.nav-links {
+  float: right;
+  ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    line-height: 45px;
+  }
+  li {
+    display: inline;
+    margin-right: 15px;
+  }
+  li:last-of-type {
+    margin-right: 0px;
+  }
+}
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+// Hiding and showing on mobile screens
+@media (max-width: 960px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  .mobile-show {
+    display: block !important;
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+// WORK SECTION ON HOME PAGE
+
+.work-teaser-box {
+  border: 1px solid $text;
+  border-bottom: 4px solid $text;
+  border-radius: 4px;
+  transition: background-color 1s;
+  margin-bottom: 20px;
+  h2 {
+    padding-left: 10px;
+    transition: color 1s;
+  }
+  p {
+    padding-left: 10px;
+    margin-top: -20px;
+    transition: color 1s;
+  }
+  img {
+    float: right;
+  }
+  &:hover {
+    background-color: $primary;
+    color: #fff;
+  }
 }
