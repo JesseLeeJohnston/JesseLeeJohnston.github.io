@@ -526,7 +526,30 @@ a, a:visited {
     margin-top: -20px;
     transition: color 1s; }
   .work-teaser-box img {
-    float: right; }
+    float: right;
+    height: 50px; }
   .work-teaser-box:hover {
     background-color: #00bc47;
     color: #fff; }
+
+@media (max-width: 500px) {
+  .work-teaser-box {
+    height: auto; } }
+.Centered {
+  display: inline-block;
+  vertical-align: middle; }
+
+.client-logo-block {
+  background-color: #444444;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px; }
+  .client-logo-block img {
+    padding: 40px;
+    margin: auto; }
+
+.footer p {
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 0;
+  color: #A8A8A8; }

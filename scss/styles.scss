@@ -103,6 +103,7 @@ a {
   border-radius: 4px;
   transition: background-color 1s;
   margin-bottom: 20px;
+
   h2 {
     padding-left: 10px;
     transition: color 1s;
@@ -114,9 +115,41 @@ a {
   }
   img {
     float: right;
+    height: 50px;
+
   }
   &:hover {
     background-color: $primary;
     color: #fff;
+  }
+}
+@media (max-width: 500px) {
+  .work-teaser-box {
+    height: auto;
+  }
+}
+
+.Centered {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.client-logo-block {
+  background-color: #444444;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  img {
+    padding: 40px;
+    margin: auto;
+  }
+}
+
+.footer {
+  p {
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 0; 
+    color: $light-text;
   }
 }
