@@ -5,6 +5,7 @@
 @import 'partials/buttons';
 @import 'partials/grid';
 @import 'partials/typography';
+@import 'partials/nav';
 
 body {
   background-color: #ffffff;
@@ -68,8 +69,13 @@ a {
   }
   li {
     display: inline;
+  }
+  @media (min-width: 960px) {
+  li {
     margin-right: 15px;
   }
+  }
+
   li:last-of-type {
     margin-right: 0px;
   }
