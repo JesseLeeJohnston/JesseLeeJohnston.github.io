@@ -2,7 +2,6 @@
 <head>
   <meta charset="utf-8">
   <title>Jesse Johnston User Experience Designer</title>
-  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/styles.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
@@ -14,8 +13,17 @@
       <a href="../index.html"><img src="../images/logo.svg" class="img-responsive"></a>
     </div>
     <div class="nav-links">
-      <div class="hidden mobile-show ">
-        <p>MENU</p>
+      <div class="hidden mobile-show">
+        <div id="cd-nav">
+          <a href="#" class="cd-nav-trigger">Menu<span></span></a>
+          <nav id="cd-main-nav">
+            <ul>
+              <li><a href="../index.html">Work</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <ul class="mobile-hidden">
         <li><a href="../index.html">Work</a></li>
