@@ -1,11 +1,15 @@
 @import 'modules/colours';
 @import 'modules/utilities';
 
-@import 'partials/normalize';
+@import 'vendor/normalize';
+@import 'vendor/animate';
+
 @import 'partials/buttons';
 @import 'partials/grid';
 @import 'partials/typography';
 @import 'partials/nav';
+@import 'partials/transitions';
+
 
 body {
   background-color: #ffffff;
@@ -47,6 +51,7 @@ a {
   background-color: rgba(255,255,255, 0.9);
   height: 45px;
   box-shadow: 0 1px 3px 0 #a3a3a3;
+  z-index: 9999;
   
 }
 .nav-inner {
