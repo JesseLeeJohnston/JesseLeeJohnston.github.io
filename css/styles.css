@@ -1,4 +1,7 @@
-@import "https://fonts.googleapis.com/css?family=Raleway";
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans";
+@import "https://fonts.googleapis.com/css?family=Slabo+27px";
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab";
+@import "https://fonts.googleapis.com/css?family=Arimo:400,700";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -3085,7 +3088,7 @@ Copyright (c) 2014 Daniel Eden
 
 body {
   background-color: #ffffff;
-  font-family: "Raleway", sans-serif;
+  font-family: "Slabo 27px", sans-serif;
   color: #30342c;
   font-size: 18px;
   line-height: 28px; }

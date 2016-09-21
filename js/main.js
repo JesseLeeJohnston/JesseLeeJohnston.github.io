@@ -35,7 +35,7 @@ $(function(){
 (function($) {
     $.fn.onPageLoad = function() {
       // browser window scroll (in pixels) after which the "menu" link is shown
-      var offset = 100;
+      var offset = -1;
 
       var navigationContainer = $('#cd-nav'),
         mainNavigation = navigationContainer.find('#cd-main-nav ul');
