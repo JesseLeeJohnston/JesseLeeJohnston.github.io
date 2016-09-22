@@ -23,13 +23,13 @@ h1 {
  font-weight: 800;
 }
 h2 {
-
+  
 }
 h3{
 
 }
 p {
-
+  margin-top: 0px;
 }
 a {
 
@@ -37,7 +37,13 @@ a {
   a, a:visited {
     color: $text;
     text-decoration: none;
+
   }
+
+.p-link {
+  text-decoration: underline;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -146,7 +152,7 @@ a {
 }
 
 .client-logo-block {
-  background-color: #444444;
+  background-color: #303030;
   text-align: center;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -157,10 +163,10 @@ a {
 }
 
 .footer {
+  padding: 20px 0; 
   p {
     font-size: 12px;
     text-align: center;
-    padding: 20px 0; 
     color: $light-text;
   }
 }
