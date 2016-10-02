@@ -2738,7 +2738,7 @@ Copyright (c) 2014 Daniel Eden
 #cd-nav li a {
   display: block;
   padding: 1.6em;
-  border-bottom: 1px solid #30342c; }
+  border-bottom: 1px solid #303030; }
 
 #cd-nav li:last-child a {
   border-bottom: none; }
@@ -2846,7 +2846,7 @@ Copyright (c) 2014 Daniel Eden
   display: block;
   width: 20px;
   height: 2px;
-  background: #30342c;
+  background: #303030;
   top: 50%;
   margin-top: -1px;
   left: 50%;
@@ -3028,6 +3028,40 @@ Copyright (c) 2014 Daniel Eden
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); } }
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 45px;
+  box-shadow: 0 1px 3px 0 #a3a3a3;
+  z-index: 9999; }
+
+.nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 10px; }
+
+.nav-brand {
+  float: left;
+  padding-top: 5px; }
+
+.nav-links {
+  float: right; }
+  .nav-links ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    line-height: 45px; }
+  .nav-links li {
+    display: inline; }
+  @media (min-width: 960px) {
+    .nav-links li {
+      margin-right: 15px; } }
+  .nav-links li:last-of-type {
+    margin-right: 0px; }
+
 /* @mixin respond-to
 ------------------------------------------------------------------- */
 /* line 6, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
@@ -3086,7 +3120,7 @@ Copyright (c) 2014 Daniel Eden
 body {
   background-color: #ffffff;
   font-family: "Arimo", sans-serif;
-  color: #30342c;
+  color: #303030;
   font-size: 18px;
   line-height: 28px; }
 
@@ -3098,7 +3132,7 @@ p {
   margin-top: 0px; }
 
 a, a:visited {
-  color: #30342c;
+  color: #303030;
   text-decoration: none; }
 
 .p-link {
@@ -3109,40 +3143,6 @@ a, a:visited {
   margin: 0 auto;
   margin-top: 75px;
   padding: 0 10px; }
-
-.nav {
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 45px;
-  box-shadow: 0 1px 3px 0 #a3a3a3;
-  z-index: 9999; }
-
-.nav-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  display: block;
-  padding: 0 10px; }
-
-.nav-brand {
-  float: left;
-  padding-top: 5px; }
-
-.nav-links {
-  float: right; }
-  .nav-links ul {
-    list-style: none;
-    padding-left: 0px;
-    margin: 0px;
-    line-height: 45px; }
-  .nav-links li {
-    display: inline; }
-  @media (min-width: 960px) {
-    .nav-links li {
-      margin-right: 15px; } }
-  .nav-links li:last-of-type {
-    margin-right: 0px; }
 
 .show {
   display: block !important; }
@@ -3162,8 +3162,8 @@ a, a:visited {
   display: block; }
 
 .work-teaser-box {
-  border: 1px solid #30342c;
-  border-bottom: 4px solid #30342c;
+  border: 1px solid #303030;
+  border-bottom: 4px solid #303030;
   border-radius: 4px;
   transition: background-color 1s;
   margin-bottom: 20px; }
@@ -3175,10 +3175,14 @@ a, a:visited {
     margin-top: -20px;
     transition: color 1s; }
   .work-teaser-box img {
-    float: right;
-    height: 50px; }
+    padding: 0px; }
+  @media (min-width: 501px) {
+    .work-teaser-box img {
+      height: 100px;
+      float: right;
+      padding: 0px; } }
   .work-teaser-box:hover {
-    background-color: #00bc47;
+    background-color: #303030;
     color: #fff; }
 
 @media (max-width: 500px) {
@@ -3203,3 +3207,9 @@ a, a:visited {
     font-size: 12px;
     text-align: center;
     color: #A8A8A8; }
+
+.margin-0 {
+  margin: 0px; }
+
+.padding-0 {
+  padding: 0px; }
