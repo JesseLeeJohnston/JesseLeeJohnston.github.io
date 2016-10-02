@@ -1,0 +1,36 @@
+.margin-0 {
+  margin: 0px;
+}
+.padding-0 {
+  padding: 0px;
+}
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+// Hiding and showing on mobile screens
+@media (max-width: 960px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  .mobile-show {
+    display: block !important;
+  }
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left; 
+}
