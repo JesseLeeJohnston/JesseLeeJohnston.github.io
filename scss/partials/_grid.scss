@@ -1,5 +1,4 @@
 $pad: 20px;
-
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,7 +7,6 @@ $pad: 20px;
 [class*='col-'] {
   padding: 0 10px;
 }
-
 .grid {
   background: none;
   margin: 0 0 20px 0;
@@ -90,12 +88,3 @@ $pad: 20px;
     padding-right: $pad;
   }
 }
-
-
-.pull-right {
-  float: right;
-}
-.pull-left {
-  float: left; 
-}
-
