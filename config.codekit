@@ -151,6 +151,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/building-a-survey.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 125994,
+		"inputAbbreviatedPath": "\/images\/building-a-survey.png",
+		"outputAbbreviatedPath": "\/images\/building-a-survey.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/calm-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -327,6 +338,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/keydrivers-report.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 190775,
+		"inputAbbreviatedPath": "\/images\/keydrivers-report.png",
+		"outputAbbreviatedPath": "\/images\/keydrivers-report.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/profile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -345,6 +367,28 @@
 		"initialSize": 110600,
 		"inputAbbreviatedPath": "\/images\/reportinga.jpg",
 		"outputAbbreviatedPath": "\/images\/reportinga.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/scatter-chart.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134295,
+		"inputAbbreviatedPath": "\/images\/scatter-chart.png",
+		"outputAbbreviatedPath": "\/images\/scatter-chart.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tmobile-referral.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 440978,
+		"inputAbbreviatedPath": "\/images\/tmobile-referral.png",
+		"outputAbbreviatedPath": "\/images\/tmobile-referral.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -698,6 +742,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/work\/responsetek.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/work\/rt-work.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/work\/rt-work.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
