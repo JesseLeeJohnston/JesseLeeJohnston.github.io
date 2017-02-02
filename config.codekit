@@ -338,6 +338,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/heatmaps.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60793,
+		"inputAbbreviatedPath": "\/images\/heatmaps.png",
+		"outputAbbreviatedPath": "\/images\/heatmaps.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/keydrivers-report.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -345,6 +356,17 @@
 		"initialSize": 190775,
 		"inputAbbreviatedPath": "\/images\/keydrivers-report.png",
 		"outputAbbreviatedPath": "\/images\/keydrivers-report.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/map-report.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 325501,
+		"inputAbbreviatedPath": "\/images\/map-report.png",
+		"outputAbbreviatedPath": "\/images\/map-report.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
