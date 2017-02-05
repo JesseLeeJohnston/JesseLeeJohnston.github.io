@@ -151,6 +151,105 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/bigstack\/Burger-Type.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 229546,
+		"inputAbbreviatedPath": "\/images\/bigstack\/Burger-Type.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/Burger-Type.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bigstack\/Checkout.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88599,
+		"inputAbbreviatedPath": "\/images\/bigstack\/Checkout.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/Checkout.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bigstack\/EnterpriseNPS-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 849744,
+		"inputAbbreviatedPath": "\/images\/bigstack\/EnterpriseNPS-2.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/EnterpriseNPS-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bigstack\/Home-Screen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 351161,
+		"inputAbbreviatedPath": "\/images\/bigstack\/Home-Screen.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/Home-Screen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bigstack\/truck-dash.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117959,
+		"inputAbbreviatedPath": "\/images\/bigstack\/truck-dash.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/truck-dash.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bigstack\/whiteboard-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 576112,
+		"inputAbbreviatedPath": "\/images\/bigstack\/whiteboard-1.jpg",
+		"outputAbbreviatedPath": "\/images\/bigstack\/whiteboard-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bigstack\/whiteboard-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 494130,
+		"inputAbbreviatedPath": "\/images\/bigstack\/whiteboard-2.jpg",
+		"outputAbbreviatedPath": "\/images\/bigstack\/whiteboard-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bigstack\/whiteboard-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 528115,
+		"inputAbbreviatedPath": "\/images\/bigstack\/whiteboard-3.jpg",
+		"outputAbbreviatedPath": "\/images\/bigstack\/whiteboard-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bigstack\/wireframes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 197498,
+		"inputAbbreviatedPath": "\/images\/bigstack\/wireframes.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/wireframes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/building-a-survey.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -261,6 +360,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/EnterpriseNPS-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 106233,
+		"inputAbbreviatedPath": "\/images\/EnterpriseNPS-1.png",
+		"outputAbbreviatedPath": "\/images\/EnterpriseNPS-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/EnterpriseNPS-2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -272,6 +382,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/EnterpriseNPS-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 849744,
+		"inputAbbreviatedPath": "\/images\/EnterpriseNPS-2.png",
+		"outputAbbreviatedPath": "\/images\/EnterpriseNPS-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/EnterpriseNPS-3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -279,6 +400,17 @@
 		"initialSize": 67391,
 		"inputAbbreviatedPath": "\/images\/EnterpriseNPS-3.jpg",
 		"outputAbbreviatedPath": "\/images\/EnterpriseNPS-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/EnterpriseNPS-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103897,
+		"inputAbbreviatedPath": "\/images\/EnterpriseNPS-3.png",
+		"outputAbbreviatedPath": "\/images\/EnterpriseNPS-3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
