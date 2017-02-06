@@ -173,17 +173,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/bigstack\/EnterpriseNPS-2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 849744,
-		"inputAbbreviatedPath": "\/images\/bigstack\/EnterpriseNPS-2.png",
-		"outputAbbreviatedPath": "\/images\/bigstack\/EnterpriseNPS-2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/bigstack\/home-screen.png": {
 		"fileType": 32768,
 		"ignore": 0,
