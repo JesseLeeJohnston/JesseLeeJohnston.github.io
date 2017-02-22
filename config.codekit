@@ -184,6 +184,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/bigstack\/pexels-photo-59100.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6.39973e+06,
+		"inputAbbreviatedPath": "\/images\/bigstack\/pexels-photo-59100.jpeg",
+		"outputAbbreviatedPath": "\/images\/bigstack\/pexels-photo-59100.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/bigstack\/truck-dash.png": {
 		"fileType": 32768,
 		"ignore": 0,
