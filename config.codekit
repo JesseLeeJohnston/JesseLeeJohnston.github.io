@@ -151,35 +151,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/bigstack\/burger-type.png": {
+	"\/images\/bigstack\/Burger-Type.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 229546,
-		"inputAbbreviatedPath": "\/images\/bigstack\/burger-type.png",
-		"outputAbbreviatedPath": "\/images\/bigstack\/burger-type.png",
+		"inputAbbreviatedPath": "\/images\/bigstack\/Burger-Type.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/Burger-Type.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/bigstack\/checkout.png": {
+	"\/images\/bigstack\/Checkout.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 88599,
-		"inputAbbreviatedPath": "\/images\/bigstack\/checkout.png",
-		"outputAbbreviatedPath": "\/images\/bigstack\/checkout.png",
+		"inputAbbreviatedPath": "\/images\/bigstack\/Checkout.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/Checkout.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/bigstack\/home-screen.png": {
+	"\/images\/bigstack\/Home-Screen.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 351161,
-		"inputAbbreviatedPath": "\/images\/bigstack\/home-screen.png",
-		"outputAbbreviatedPath": "\/images\/bigstack\/home-screen.png",
+		"inputAbbreviatedPath": "\/images\/bigstack\/Home-Screen.png",
+		"outputAbbreviatedPath": "\/images\/bigstack\/Home-Screen.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
