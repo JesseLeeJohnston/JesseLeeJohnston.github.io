@@ -199,9 +199,9 @@ a {
 .section-3 {
   flex-direction: row;
   align-self: flex-end;
-    padding: 10px;
+  padding: 10px;
 }
-a.feature-project {
+.feature-project {
   text-decoration: none;
   color: #ffffff;
 
@@ -261,9 +261,9 @@ small {
   font-size: .5em;
 
 }
-.img-border {
-  margin: 16px 0px;
-}
+// .img-border {
+//   margin: 16px 0px;
+// }
 .footer {
   font-size: .5em;
 }
@@ -274,4 +274,7 @@ small {
 }
 .profile {
   border-radius: 8px;
+}
+.padding-port-item {
+  margin: 15px 0px;
 }
