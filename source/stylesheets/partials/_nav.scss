@@ -1,0 +1,21 @@
+.nav li {
+  float: left;
+  list-style: none;
+}
+.nav li a {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: .8em;
+}
+.nav li a:hover {
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+  transition: padding-bottom 250ms ease;
+}
+.nav li a.active {
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+}
