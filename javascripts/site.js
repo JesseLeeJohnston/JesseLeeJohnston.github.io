@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e(".cd-btn").on("click",function(n){n.preventDefault(),e(".cd-panel").addClass("is-visible")}),e(".cd-panel").on("click",function(n){(e(n.target).is(".cd-panel")||e(n.target).is(".cd-panel-close"))&&(e(".cd-panel").removeClass("is-visible"),n.preventDefault())})});
